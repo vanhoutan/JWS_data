@@ -1,7 +1,6 @@
-## plots and dataviz for PAH data for deposited wildfire ash
-## build several plots from raw data csvs and dfs 
-## ash collected mid-late August 2020, on the roof of the Monterey Bay Aquarium in Pacific Grove, Calif 
-## PAH analysis generated from diagnostic lab at UConn 
+## plots and dataviz for JWS metadata paper
+## build several plots from raw data csvs and DFs 
+## Pretty standard stuff really 
 
 library(plyr)
 library(dplyr)
@@ -22,14 +21,63 @@ themeKV <-theme_few()+
         strip.text=element_text(hjust=0))
 
 
-## make a simple bar plot of particle size masses from deposited ash
-## need to understand the particle size distribution to understand possible influence on PAH quants
-## should be figure 1c in the paper
+## make a series of plots on the capture program
+## should be figure 1a-hc in the paper
 
-PAH <- read.csv('./data/ash/mass_particle_ash_deposit.csv', header = T)
-ggplot(PAH, aes(x = SIZE_ASH_mm, y = MASS_ash_prop)) +
+## tags deploymed by year, barplot
+metaDF <- read.csv('./data/jws_tag_metadata.csv', header = T)
+ggplot(metaDF, aes(x = YEAR_CAP)) +
   themeKV +
-  geom_bar(stat="identity",alpha=0.4)
+  geom_point(stat="count",alpha=0.65) +
+  geom_line(stat="count",alpha=0.65) +
+  xlab("deployment year") +
+  ylab("sharks tagged (no. individuals)") +
+  scale_y_continuous(limits = c(0,10),
+                     breaks = c(0,2,4,6,8,10)) +
+  scale_x_continuous(limits = c(2000,2020),
+                     breaks = c(2000,2005,2010,2015,2020))
+  
+## tags deploymed by numerical month, barplot
+metaDF <- read.csv('./data/jws_tag_metadata.csv', header = T)
+ggplot(metaDF, aes(x = MONTH_CAP)) +
+  themeKV +
+  geom_bar(stat="count",alpha=0.4) +
+  xlab("deployment month") +
+  ylab("sharks tagged (no. individuals)") +
+  scale_x_continuous(limits = c(0,12),
+                     breaks = c(2,4,6,8,12))
+
+
+## tags deploymed by latitude, density plot
+ggplot(metaDF, aes(x = LAT_REL)) +
+  themeKV +
+  geom_density(alpha=0.4) +
+  xlab("deployment latitude (°)") +
+  scale_x_continuous(limits = c(27,37),
+                     breaks = c(27,28,29,30,31,32,33,34,35,36,37)) +
+  scale_y_reverse()+
+  ## if want flip axes
+    coord_flip()
+
+
+## types of tags deployed, bar plot
+tagDF <- read.csv('./data/jws_tag_types.csv', header = T)
+ggplot(tagDF, aes(x = fct_infreq(TAG_MODEL),fill=TAG_TYPE)) +
+  ## ggplot(tagDF, aes(x = TAG_MODEL)) +
+  themeKV +
+  geom_bar(stat="count",alpha=0.65) +
+  xlab("tag model") +
+  ylab("sharks tagged (no. individuals)") +
+  scale_y_continuous(breaks = c(0,5,10,15,20,25,30))
+
+
+  
+  
+  
+  
+
+
+
 ## alternative using x axis particle size as categorical variable  
 ggplot(PAH, aes(x = SIZE_ASH, y = MASS_ash_prop)) +
   themeKV +
