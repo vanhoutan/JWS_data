@@ -152,15 +152,14 @@ metaDF %>%
 
 ## capture gear type
 ## lollipop
-## cannot reorder y axis in descending, was trying to implement code at this URL
-## https://learn.r-journalism.com/en/visualizing/customizing_charts/customizing-exporting-ggplot2/library(forcats)
 metaDF <- read.csv('./data/jws_tag_metadata.csv', header = T)
 metaDF %>%
   group_by(CAPTURE_GEAR) %>% 
   summarise(count = n()) %>% 
   ggplot(aes(x = count, y=CAPTURE_GEAR)) +
   themeKV +
-  geom_segment(aes(y=CAPTURE_GEAR,yend= CAPTURE_GEAR, x=0, xend=count), alpha=0.65) +
+## reorder y axis in descending order based on count
+  geom_segment(aes(y=fct_reorder(CAPTURE_GEAR, count),yend= CAPTURE_GEAR, x=0, xend=count), alpha=0.65) +
   geom_point(alpha=0.65, size=4, color="orange") +
   xlab("interaction gear") +
   ylab("sharks tagged (no. individuals)") +
@@ -168,72 +167,25 @@ metaDF %>%
                      breaks = c(0,4,8,12,16))
 
 
-## Target fishery 
+## Target fishery used to deploy tags
 ## bar plot
-
-
-
-
-
-## alternative using x axis particle size as categorical variable  
-ggplot(PAH, aes(x = SIZE_ASH, y = MASS_ash_prop)) +
+## would prefer to sort fill scale by count, but cannot figure out
+## so hard wired into variable names in col by their count rank (1,2,3...)
+library(viridis)
+metaDF <- read.csv('./data/jws_tag_metadata.csv', header = T) 
+ggplot(metaDF, aes(x = fct_infreq(TARGET_FISHERY), fill= TARGET_FISHERY)) +
   themeKV +
-  geom_bar(stat="identity",alpha=0.4)
-
-
-library(scales)
-library(tidyverse)
-## make a bar style plot summarizing, ranking the PAH quantification from ash
-## should be figure ~ 1e in the paper
-PAH2 <- read.csv('./data/ash/PAH_particle_ash_deposit.csv', header = T)
-# head(PAH2)
-PAH2 %>%
-  ## reorder data so that highest concentration is on top
-  mutate(PAH = fct_reorder(PAH, total)) %>% 
-  ggplot(mapping= aes(x=PAH, y=total)) +
-  themeKV +
-  ##  geom_col() + ## choose geom_point below instead
-  scale_y_log10(limits = c(8,2000)) +
-  ##                breaks = trans_breaks("log10", function(x) 10^x)),
-  ##                labels = trans_format("log10", math_format(10^.x))) +
-  ##  annotation_logticks(sides="l") +
-  geom_point(shape = 21, fill = "lightgray", color = "black", size = 3) +
-  coord_flip()
-
-
-## plot particle size vs PAH concentration, with log model through data
-## should be figure ~ 1d in the paper
-PAH3 <- read.csv('./data/ash/PAH_particle_vs_PAH.csv', header = T)
-ggplot(data = PAH3, aes(x=size, y=ppb, group=total, color=total)) +
-  themeKV +
-  scale_color_manual(values=c("#000000", "#FF9900")) +
-  geom_point(shape = 21, size = 5) +  
-  geom_smooth(method="nls", se=FALSE, formula=y~a*log(x)+k,
-              method.args=list(start=c(a=1, k=1)))+
-  scale_y_continuous(limits = c(600,9400),
-                     breaks = c(1000,2000,3000,4000,5000,6000,7000,8000,9000))
-
-
-
-## make a box plot of HMs in deposited ash
-## displaying raw values (n=4) with jitter
-## should be figure 1_ in the paper
-
-HM2 <- read.csv('./data/ash/ash_deposit_CAHFS_HMs.csv', header = T)
-ggplot(HM2, aes(x = fct_reorder(element, metal_ppm, .fun=median, .desc=TRUE), y = metal_ppm)) +
-  themeKV +
-  theme(strip.background = element_blank(),
-        axis.line = element_blank(),
-        panel.border = element_rect(colour = "black", fill=NA, size=.5),
-        axis.ticks.length = unit(-.15, "cm"), 
-        axis.text.x = element_text(margin = margin(t = 10, unit = "pt")),
-        axis.title.y = element_text(margin = margin(-2,-2,-2,-2)),
-        axis.text.y = element_text(hjust = 1, margin = margin(10, 10, 10, 10))) +
-  geom_point(alpha=0.55, color="#FF9900", position="jitter", shape = 16, size = 4) +  
-  geom_boxplot(alpha=0) +  ## alpha=0 is fully transparent interior of box
-  scale_y_log10(limits = c(1,12000)) +
-  xlab("metal") +
-  ylab("ppm") # +
-## just to check differences between sites
-## facet_wrap(~collection_site, ncol=1)
-
+  geom_bar(stat="count", alpha=0.75) +
+  scale_fill_viridis_d(
+    alpha = 1,
+    begin = 0.1,
+    end = 0.75,
+    direction = 1,
+    option = "inferno",
+    aesthetics = "fill"
+  ) +
+  xlab("fishery target species") +
+## remove NA values from the diplayed counts
+  scale_x_discrete(na.translate = FALSE) +
+  ylab("sharks tagged (no. individuals)") +
+  scale_y_continuous(breaks = c(0,4,8,12,16))
