@@ -168,9 +168,6 @@ metaDF %>%
                      breaks = c(0,4,8,12,16))
 
 
-
-y=fct_reorder(CAPTURE_GEAR, actress_age, desc=TRUE)
-
 ## Target fishery 
 ## bar plot
 
