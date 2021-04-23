@@ -1,100 +1,100 @@
 ﻿SHARK_ID,TAG_TYPE,TAG_MAKE,TAG_MODEL
-10_17,PAT,Wildlife Computers,MiniPAT
-11_06_C,PAT,Wildlife Computers,MiniPAT
-13_01,PAT,Wildlife Computers,MiniPAT
-14_07,PAT,Wildlife Computers,MiniPAT
-16_03,PAT,Wildlife Computers,MiniPAT
-16_2MX,PAT,Wildlife Computers,MiniPAT
-17_01,PAT,Wildlife Computers,MiniPAT
-17_19,PAT,Wildlife Computers,MiniPAT
-17_21,PAT,Wildlife Computers,MiniPAT
-18_02,PAT,Wildlife Computers,MiniPAT
-18_16,PAT,Wildlife Computers,MiniPAT
-19_11,PAT,Wildlife Computers,MiniPAT
-19_13,PAT,Wildlife Computers,MiniPAT
-19_15,PAT,Wildlife Computers,MiniPAT
-19_19,PAT,Wildlife Computers,MiniPAT
-19_20,PAT,Wildlife Computers,MiniPAT
-19_22,PAT,Wildlife Computers,MiniPAT
-20_03,PAT,Wildlife Computers,MiniPAT
-03_02,PAT,Wildlife Computers,MK10
-06_10,PAT,Wildlife Computers,MK10
-07_01,PAT,Wildlife Computers,MK10
-07_03,PAT,Wildlife Computers,MK10
-07_05,PAT,Wildlife Computers,MK10
-08_01,PAT,Wildlife Computers,MK10
-08_02,PAT,Wildlife Computers,MK10
-08_04,PAT,Wildlife Computers,MK10
-08_07,PAT,Wildlife Computers,MK10
-08_09,PAT,Wildlife Computers,MK10
-08_11,PAT,Wildlife Computers,MK10
-08_13,PAT,Wildlife Computers,MK10
-08_17,PAT,Wildlife Computers,MK10
-08_18,PAT,Wildlife Computers,MK10
-09_04,PAT,Wildlife Computers,MK10
-09_07,PAT,Wildlife Computers,MK10
-09_09,PAT,Wildlife Computers,MK10
-09_09_B,PAT,Wildlife Computers,MK10
-09_11_B,PAT,Wildlife Computers,MK10
-09_12,PAT,Wildlife Computers,MK10
-09_15,PAT,Wildlife Computers,MK10
-10_05,PAT,Wildlife Computers,MK10
-10_07,PAT,Wildlife Computers,MK10
-10_10,PAT,Wildlife Computers,MK10
-10_16,PAT,Wildlife Computers,MK10
-10_18,PAT,Wildlife Computers,MK10
-10_19,PAT,Wildlife Computers,MK10
-11_05,PAT,Wildlife Computers,MK10
-15_10,PAT,Wildlife Computers,MK10
-15_1MX,PAT,Wildlife Computers,MK10
-15_2MX,PAT,Wildlife Computers,MK10
-16_1MX,PAT,Wildlife Computers,MK10
-16_3MX,PAT,Wildlife Computers,MK10
-16_4MX,PAT,Wildlife Computers,MK10
-02_01,PAT,Wildlife Computers,PAT2
-03_01,PAT,Wildlife Computers,PAT2
-03_03,PAT,Wildlife Computers,PAT2
-04_01,PAT,Wildlife Computers,PAT4
-04_02,PAT,Wildlife Computers,PAT4
-05_01,PAT,Wildlife Computers,PAT4
-06_05,SPOT,Wildlife Computers,SPOT5
-06_12,SPOT,Wildlife Computers,SPOT5
-06_13,SPOT,Wildlife Computers,SPOT5
-06_14,SPOT,Wildlife Computers,SPOT5
-07_03,SPOT,Wildlife Computers,SPOT5
-07_05,SPOT,Wildlife Computers,SPOT5
-08_01,SPOT,Wildlife Computers,SPOT5
-08_02,SPOT,Wildlife Computers,SPOT5
-08_04,SPOT,Wildlife Computers,SPOT5
-08_07,SPOT,Wildlife Computers,SPOT5
-08_09,SPOT,Wildlife Computers,SPOT5
-08_13,SPOT,Wildlife Computers,SPOT5
-08_18,SPOT,Wildlife Computers,SPOT5
-09_07,SPOT,Wildlife Computers,SPOT5
-09_09,SPOT,Wildlife Computers,SPOT5
-09_11_B,SPOT,Wildlife Computers,SPOT5
-09_12,SPOT,Wildlife Computers,SPOT5
-09_13,SPOT,Wildlife Computers,SPOT5
-09_14,SPOT,Wildlife Computers,SPOT5
-09_15,SPOT,Wildlife Computers,SPOT5
-15_10,acoustic,Vemco,V16
-11_06_C,acoustic,Vemco,V16
-14_07,acoustic,Vemco,V16
-11_05,acoustic,Vemco,V16
-10_19,acoustic,Vemco,V16
-10_18,acoustic,Vemco,V16
-10_17,acoustic,Vemco,V16
-10_16,acoustic,Vemco,V16
-17_01,acoustic,Vemco,V16
-13_01,acoustic,Vemco,V16
-17_19,acoustic,Vemco,V16
-17_21,acoustic,Vemco,V16
-16_2MX,acoustic,Vemco,V16
-16_3MX,acoustic,Vemco,V16
-16_1MX,acoustic,Vemco,V16
-16_4MX,acoustic,Vemco,V16
-15_2MX,acoustic,Vemco,V16
-15_1MX,acoustic,Vemco,V16
-19_20,acoustic,Vemco,V16
-19_13,acoustic,Vemco,V16
-20_03,acoustic,Vemco,V16
+10_17,1_PAT,Wildlife Computers,MiniPAT
+11_06_C,1_PAT,Wildlife Computers,MiniPAT
+13_01,1_PAT,Wildlife Computers,MiniPAT
+14_07,1_PAT,Wildlife Computers,MiniPAT
+16_03,1_PAT,Wildlife Computers,MiniPAT
+16_2MX,1_PAT,Wildlife Computers,MiniPAT
+17_01,1_PAT,Wildlife Computers,MiniPAT
+17_19,1_PAT,Wildlife Computers,MiniPAT
+17_21,1_PAT,Wildlife Computers,MiniPAT
+18_02,1_PAT,Wildlife Computers,MiniPAT
+18_16,1_PAT,Wildlife Computers,MiniPAT
+19_11,1_PAT,Wildlife Computers,MiniPAT
+19_13,1_PAT,Wildlife Computers,MiniPAT
+19_15,1_PAT,Wildlife Computers,MiniPAT
+19_19,1_PAT,Wildlife Computers,MiniPAT
+19_20,1_PAT,Wildlife Computers,MiniPAT
+19_22,1_PAT,Wildlife Computers,MiniPAT
+20_03,1_PAT,Wildlife Computers,MiniPAT
+03_02,1_PAT,Wildlife Computers,MK10
+06_10,1_PAT,Wildlife Computers,MK10
+07_01,1_PAT,Wildlife Computers,MK10
+07_03,1_PAT,Wildlife Computers,MK10
+07_05,1_PAT,Wildlife Computers,MK10
+08_01,1_PAT,Wildlife Computers,MK10
+08_02,1_PAT,Wildlife Computers,MK10
+08_04,1_PAT,Wildlife Computers,MK10
+08_07,1_PAT,Wildlife Computers,MK10
+08_09,1_PAT,Wildlife Computers,MK10
+08_11,1_PAT,Wildlife Computers,MK10
+08_13,1_PAT,Wildlife Computers,MK10
+08_17,1_PAT,Wildlife Computers,MK10
+08_18,1_PAT,Wildlife Computers,MK10
+09_04,1_PAT,Wildlife Computers,MK10
+09_07,1_PAT,Wildlife Computers,MK10
+09_09,1_PAT,Wildlife Computers,MK10
+09_09_B,1_PAT,Wildlife Computers,MK10
+09_11_B,1_PAT,Wildlife Computers,MK10
+09_12,1_PAT,Wildlife Computers,MK10
+09_15,1_PAT,Wildlife Computers,MK10
+10_05,1_PAT,Wildlife Computers,MK10
+10_07,1_PAT,Wildlife Computers,MK10
+10_10,1_PAT,Wildlife Computers,MK10
+10_16,1_PAT,Wildlife Computers,MK10
+10_18,1_PAT,Wildlife Computers,MK10
+10_19,1_PAT,Wildlife Computers,MK10
+11_05,1_PAT,Wildlife Computers,MK10
+15_10,1_PAT,Wildlife Computers,MK10
+15_1MX,1_PAT,Wildlife Computers,MK10
+15_2MX,1_PAT,Wildlife Computers,MK10
+16_1MX,1_PAT,Wildlife Computers,MK10
+16_3MX,1_PAT,Wildlife Computers,MK10
+16_4MX,1_PAT,Wildlife Computers,MK10
+02_01,1_PAT,Wildlife Computers,PAT2
+03_01,1_PAT,Wildlife Computers,PAT2
+03_03,1_PAT,Wildlife Computers,PAT2
+04_01,1_PAT,Wildlife Computers,PAT4
+04_02,1_PAT,Wildlife Computers,PAT4
+05_01,1_PAT,Wildlife Computers,PAT4
+06_05,3_SPOT,Wildlife Computers,SPOT5
+06_12,3_SPOT,Wildlife Computers,SPOT5
+06_13,3_SPOT,Wildlife Computers,SPOT5
+06_14,3_SPOT,Wildlife Computers,SPOT5
+07_03,3_SPOT,Wildlife Computers,SPOT5
+07_05,3_SPOT,Wildlife Computers,SPOT5
+08_01,3_SPOT,Wildlife Computers,SPOT5
+08_02,3_SPOT,Wildlife Computers,SPOT5
+08_04,3_SPOT,Wildlife Computers,SPOT5
+08_07,3_SPOT,Wildlife Computers,SPOT5
+08_09,3_SPOT,Wildlife Computers,SPOT5
+08_13,3_SPOT,Wildlife Computers,SPOT5
+08_18,3_SPOT,Wildlife Computers,SPOT5
+09_07,3_SPOT,Wildlife Computers,SPOT5
+09_09,3_SPOT,Wildlife Computers,SPOT5
+09_11_B,3_SPOT,Wildlife Computers,SPOT5
+09_12,3_SPOT,Wildlife Computers,SPOT5
+09_13,3_SPOT,Wildlife Computers,SPOT5
+09_14,3_SPOT,Wildlife Computers,SPOT5
+09_15,3_SPOT,Wildlife Computers,SPOT5
+15_10,2_acoustic,Vemco,V16
+11_06_C,2_acoustic,Vemco,V16
+14_07,2_acoustic,Vemco,V16
+11_05,2_acoustic,Vemco,V16
+10_19,2_acoustic,Vemco,V16
+10_18,2_acoustic,Vemco,V16
+10_17,2_acoustic,Vemco,V16
+10_16,2_acoustic,Vemco,V16
+17_01,2_acoustic,Vemco,V16
+13_01,2_acoustic,Vemco,V16
+17_19,2_acoustic,Vemco,V16
+17_21,2_acoustic,Vemco,V16
+16_2MX,2_acoustic,Vemco,V16
+16_3MX,2_acoustic,Vemco,V16
+16_1MX,2_acoustic,Vemco,V16
+16_4MX,2_acoustic,Vemco,V16
+15_2MX,2_acoustic,Vemco,V16
+15_1MX,2_acoustic,Vemco,V16
+19_20,2_acoustic,Vemco,V16
+19_13,2_acoustic,Vemco,V16
+20_03,2_acoustic,Vemco,V16
