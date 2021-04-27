@@ -109,6 +109,13 @@ ggplot(metaDF, aes(x = DIST_KM)) +
   scale_x_continuous(breaks = c(0,400,800,1200,1600,2000))
 
 
+## deployment duration versus distance travelled between release and pop, Figure 2f ???
+## scatter plot
+metaDF <- read.csv('./data/jws_tag_metadata.csv', header = T)
+ggplot(metaDF, aes(x = DEPLOY_DAYS, y = DIST_KM)) +
+  themeKV +
+  geom_smooth(color="#FF9900", fill="#FF9900", method = "loess", formula = y ~ x, span = 1, se = TRUE)+
+  geom_point(color="#000000", alpha=0.35, shape = 16, size = 3)
 
 
 
