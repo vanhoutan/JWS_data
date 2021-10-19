@@ -11,7 +11,7 @@ library(ggplot2)
 library(tidyverse)
 library(forcats)
 library(tidyr)
-
+library(viridis)
 
 themeKV <-theme_few()+
   theme(strip.background = element_blank(),
