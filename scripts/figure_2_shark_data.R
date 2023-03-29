@@ -63,7 +63,7 @@ metaDF %>%
        caption = "female + male + NA")  
   
 
-## total days deployed from tagto pop, figure 2c 
+## total days deployed from tag applied to when the tag popped, figure 2c 
 ## histogr plot
 metaDF <- read.csv('./data/jws_tag_metadata.csv', header = T)
 ggplot(metaDF, aes(x = DEPLOY_DAYS)) +
