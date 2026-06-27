@@ -2,7 +2,7 @@
 <p align="center"><b>Figure and metadata code for the juvenile white shark biologging database (northeast Pacific, 2001–2020)</b></p>
 
 <p align="center">
-  <img src="header.png" alt="Juvenile White Shark Project metadata summaries: tags per year, body length, release latitude, and distance vs. deployment" width="100%">
+  <img src="header.png" width="300" alt="Juvenile White Shark Project metadata summaries: tags per year, body length, release latitude, and distance vs. deployment" width="100%">
 </p>
 
 <p align="center">
